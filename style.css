@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background: var(--off-black);
+  color: var(--white);
+  font-family: "Inter";
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+article {
+  background: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 25px 50px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+span {
+  font-weight: 400;
+  font-size: small;
+  text-align: center;
+}
+
+q {
+  padding: 12px 0 5px 0;
+  font-size: small;
+  text-align: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+span {
+  color: var(--green);
+}
+
+section {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
+}
+
+button {
+  width: 100%;
+  background: var(--grey);
+  color: var(--white);
+  border: none;
+  padding: 11px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+button:hover {
+  background: var(--green);
+  color: var(--dark-grey);
+  cursor: pointer;
+}
